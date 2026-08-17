@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Søren Stern</title>
+  <meta name="description" content="Personal modular portal for film, matches, and creations by Søren Stern.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <span class="brand-name">SSTERN</span>
+        </div>
+        <div class="header-status">
+          <span class="status-dot"></span>
+          <span class="status-text">Online</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard" id="dashboard">
+      <section class="hero-section">
+        <h1 class="hero-title">Søren Stern</h1>
+        <p class="hero-sub">Modular portal · Film · Matches · Creations</p>
+      </section>
+
+      <section class="modules-grid" id="modules-grid">
+        <article class="module-card" data-module="film">
+          <div class="module-glass">
+            <div class="module-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                <line x1="7" y1="2" x2="7" y2="22"></line>
+                <line x1="17" y1="2" x2="17" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <line x1="2" y1="7" x2="7" y2="7"></line>
+                <line x1="2" y1="17" x2="7" y2="17"></line>
+                <line x1="17" y1="17" x2="22" y2="17"></line>
+                <line x1="17" y1="7" x2="22" y2="7"></line>
+              </svg>
+            </div>
+            <h2 class="module-title">Film</h2>
+            <p class="module-desc">Reviews, analysis, and film-related work</p>
+            <span class="module-action">Open</span>
+          </div>
+        </article>
+
+        <article class="module-card" data-module="matches">
+          <div class="module-glass">
+            <div class="module-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h2 class="module-title">Matches</h2>
+            <p class="module-desc">Football and game matches involving Søren</p>
+            <span class="module-action">Open</span>
+          </div>
+        </article>
+
+        <article class="module-card" data-module="lab">
+          <div class="module-glass">
+            <div class="module-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 3h6v2H9z"></path>
+                <path d="M10 5v4.5L5.5 18a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3L14 9.5V5"></path>
+              </svg>
+            </div>
+            <h2 class="module-title">Lab</h2>
+            <p class="module-desc">Creations, experiments, and future projects</p>
+            <span class="module-action">Open</span>
+          </div>
+        </article>
+
+        <article class="module-card" data-module="feed">
+          <div class="module-glass">
+            <div class="module-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+              </svg>
+            </div>
+            <h2 class="module-title">Feed</h2>
+            <p class="module-desc">Updates and short-form notes</p>
+            <span class="module-action">Open</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="module-view" id="module-view" hidden>
+      <div class="module-view-inner">
+        <button class="back-btn" id="back-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          Back
+        </button>
+        <div class="module-content" id="module-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
